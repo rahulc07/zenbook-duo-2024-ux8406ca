@@ -1,4 +1,12 @@
-# zenbook-duo-2024-ux8406ma-linux
+# zenbook-duo-2024-ux8406ca-linux
+
+## Modifications
+Modified to work with Gnome 48,
+Works with UX8406CA.
+
+To stop switching to Airplane mode when the keyboard is taken off apply this kernel patch:  
+https://raw.githubusercontent.com/Tucana-Linux/tucana-pkgs-extra/refs/heads/main/linux/zenbook-ux8406ca.patch
+
 
 Features:
 * brightness sync (any)
