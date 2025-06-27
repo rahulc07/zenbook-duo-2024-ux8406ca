@@ -4,7 +4,7 @@
 Modified to work with Gnome 48,
 Works with UX8406CA.
 
-To stop switching to Airplane mode when the keyboard is taken off apply this kernel patch:  
+To stop switching to Airplane mode when the keyboard is taken off apply this kernel patch (currently in process of being merged https://git.kernel.org/pub/scm/linux/kernel/git/pdx86/platform-drivers-x86.git/commit/?h=review-ilpo-fixes&id=7dc6b2d3b5503bcafebbeaf9818112bf367107b4):  
 https://raw.githubusercontent.com/Tucana-Linux/tucana-pkgs-extra/refs/heads/main/linux/zenbook-ux8406ca.patch
 
 
