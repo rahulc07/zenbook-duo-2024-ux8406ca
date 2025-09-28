@@ -50,9 +50,12 @@ case "$1" in
     ;;
   top)
     gdctl set \
-      -LpM eDP-1 -m $prefered_resolution  -s $ui_scale --for-lease-monitor eDP-2
+      -LpM eDP-1 -m $prefered_resolution  -s $ui_scale
     ;;
   both)
+    gdctl set \
+      -LpM eDP-1 -m $prefered_resolution -s $ui_scale \
+      -LM  eDP-2 -m $prefered_resolution -s $ui_scale --below eDP-1
     gdctl set \
       -LpM eDP-1 -m $prefered_resolution -s $ui_scale \
       -LM  eDP-2 -m $prefered_resolution -s $ui_scale --below eDP-1
@@ -97,9 +100,9 @@ case "$1" in
     ;;
   set-tablet-mapping)
     for type in tablets touchscreens; do
-      dconf write "/org/gnome/desktop/peripherals/touchscreen/04f3:4447/output" \
+      dconf write "/org/gnome/desktop/peripherals/touchscreens/04f3:4447/output" \
         "['SDC', '0x419d', '0x00000000', 'eDP-1']"
-      dconf write "/org/gnome/desktop/peripherals/touchscreen/04f3:4448/output" \
+      dconf write "/org/gnome/desktop/peripherals/touchscreens/04f3:4448/output" \
         "['SDC', '0x419d', '0x00000000', 'eDP-2']"
     done
     ;;

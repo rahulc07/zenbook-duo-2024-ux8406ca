@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/rahul/Downloads/zenbook-duo-2024-ux8406ma-linux
+cd /home/rahul/Git-Clones/zenbook-duo-2024-ux8406ca
 screen -dmS duo ./duo watch-displays
